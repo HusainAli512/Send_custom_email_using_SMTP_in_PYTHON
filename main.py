@@ -30,11 +30,11 @@ for index , row in csv.iterrows():
 
         with open(filepath , 'r') as msg :
             msg = msg.read()     
-        email = "plzdaddychill69@gmail.com"
-        password = "zrku fysu bkip rvnk"
+        email = youremail
+        password = yourpassword
 
         with  smtplib.SMTP("smtp.gmail.com" , 587) as f:
             f.starttls()
             f.login(user = email , password = password )
-            f.sendmail(from_addr=email , to_addrs="baloch.hb69@gmail.com" , msg = f"Subject: Test Email\n\n{msg}")
+            f.sendmail(from_addr=email , to_addrs="add email here" , msg = f"Subject: Test Email\n\n{msg}")
             print("message sent")
